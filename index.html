@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Основы Vue.js</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="shower/themes/ribbon/styles/styles.css">
+    <style>
+        .shower {
+            --slide-ratio: calc(16 / 9);
+        }
+    </style>
+</head>
+<body class="shower list">
+
+    <header class="caption">
+        <h1>Основы Vue.js</h1>
+        <p>Epic Skills, 2018</p>
+    </header>
+
+    <section class="slide clear" id="cover">
+        <img class="cover" src="pictures/vue_img.png" alt="vue logo on black backgroung">
+
+        <style>
+            #cover h2 {
+                margin: 30px 0 0;
+                color: white;
+                text-align: center;
+                font-size: 70px;
+            }
+
+            #cover p {
+                margin: 10px 0 0;
+                text-align: center;
+                color: white;
+                font-style: italic;
+                font-size: 20px;
+            }
+
+            #cover p a {
+                color: white;
+            }
+
+            #cover {
+                background-color: #000;
+            }
+        </style>
+    </section>
+
+    <section class="slide">
+        <h2>Привет!</h2>
+        <p>Меня зовут, Сергей</p>
+        <p>Я разработчик в компании Func</p>
+    </section>
+
+    <section class="slide">
+        <h2>План занятия</h2>
+        <ol>
+            <li>О vue.js</li>
+            <li>Требования и окружение</li>
+            <li>Установим CLI, и немного поговорим о нем</li>
+            <li>Создадим проект, настроим и изучим архитектуру</li>
+            <li>Изучим основы</li>
+            <li>Немного покодим</li>
+        </ol>
+    </section>
+
+    <section class="slide">
+        <h2>Кратко о Vue.js</h2>
+        <p>Vue JS JavaScript-фреймворк разработанный Эваном Ю. в 2013 году</p>
+        <p>Поддержка браузерами IE9+</p>
+        <p>Очень быстрый. <a href="https://stefankrause.net/js-frameworks-benchmark8/table.html">ссылка на бенчмарк</a></p>
+        <p>Очень компактный. 77,5 КБ версия для разработки</p>
+        <p>Пытается реализовать паттерн <a href="https://ru.wikipedia.org/wiki/Model-View-ViewModel">MVVM</a></p>
+    </section>
+
+    <section class="slide">
+        <h2>Инструменты</h2>
+        <ol>
+            <li>Node.js (версии 8.9 или выше)</li>
+            <li>Npm или Yarn</li>
+            <li><a href="https://vuejs.org/">Vue.js</a></li>
+            <li><a href="https://cli.vuejs.org/">Vue CLI 3</a></li>
+            <li><a href="https://github.com/vuejs/vue-devtools#vue-devtools">Vue Devtools</a></li>
+        </ol>
+    </section>
+
+    <section class="slide">
+        <h2>Установим все необходимое</h2>
+        <p>Vue CLI 3</p>
+        <pre>
+            <code>npm install -g @vue/cli</code>
+            <code>vue --version</code>
+        </pre>
+
+        <p>Клонируем тестовый проект</p>
+        <a href="https://github.com/SGKuksov/bikes">https://github.com/SGKuksov/bikes</a>
+    </section>
+
+
+
+    <section class="slide">
+        <h2>Vue CLI 3</h2>
+        <ol>
+            <li>@vue/cli — это npm-пакет, предоставляющий команду vue в терминале</li>
+            <li>@vue/cli-service  — это зависимость для разработки построенная на основе webpack</li>
+            <li>Плагины для CLI:
+              <ul>
+                <li>транспиляторы, например Babel / TypeScript</li>
+                <li>линтеры ESLint</li>
+                <li>модули для тестирования</li>
+              </ul>
+            </li>
+        </ol>
+    </section>
+
+    <section class="slide">
+        <h2>Создадим проект</h2>
+        <p>Перейдем в папку с проектами</p>
+        <pre>
+          <code>vue create bikes</code>
+        </pre>
+    </section>
+
+    <section class="slide">
+        <p>Выберем опции</p>
+        <ol>
+          <li>Manually select features </li>
+          <li>Babel, Router, Vuex, CSS Pre-processors</li>
+          <li>Use history mode for router? Y</li>
+          <li>Sass/SCSS</li>
+          <li>In package.json</li>
+          <li>Save this as a preset for future projects? N</li>
+          <li>Use NPM</li>
+        </ol>
+    </section>
+
+    <section class="slide" id="picture">
+        <h2>Vuex</h2>
+        <img class="cover" src="pictures/picture.jpg" alt="">
+
+        <style>
+            #picture h2 {
+                color: white;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="picture">
+        <h2>Vue Router</h2>
+        <figure>
+            <img class="cover" src="pictures/picture.jpg" alt="Orange typewriter on a wooden table close-up">
+            <figcaption class="copyright right white">
+                <a href="http://fiftyfootshadows.net/">© John Carey</a>
+            </figcaption>
+        </figure>
+        <style>
+            #picture h2 {
+                color: white;
+            }
+        </style>
+    </section>
+
+    <section class="slide">
+        <h2>Inner navigation</h2>
+        <ol>
+            <li>Lets you reveal list items one by one</li>
+            <li class="next">To keep some key points</li>
+            <li class="next">In secret from audience</li>
+            <li class="next">But it will work only once</li>
+            <li class="next">Nobody wants to see the same joke twice</li>
+        </ol>
+    </section>
+
+    <section class="slide" id="see-more">
+        <h2 class="shout">
+            <img src="pictures/logo.svg" alt="Shower logo">
+            <a href="https://github.com/shower/shower">See more on GitHub</a>
+        </h2>
+        <style>
+            #see-more h2 {
+                font-size: 100px
+            }
+
+            #see-more img {
+                width: 0.72em;
+                height: 0.72em;
+            }
+        </style>
+    </section>
+
+    <footer class="badge">
+        <!-- <a href="https://github.com/shower/shower">Fork me on GitHub</a> -->
+    </footer>
+
+    <div class="progress"></div>
+
+    <script src="shower/shower.min.js"></script>
+    <!-- Copyright © 2018 Yours Truly, Famous Inc. -->
+
+</body>
+</html>
